@@ -1,0 +1,359 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.header-content {
+    flex-basis: 100%;
+    height: 10%;
+    background-color: $secondary-color;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.text-logo {
+    display: flex;
+    flex-basis: 30%;
+    color: $white-color;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.menu {
+
+    display: flex;
+    flex-basis: 30%;
+    justify-content: space-between;
+    align-items: center;
+  
+
+}
+
+.menu-btn {
+    height: 80%;
+    flex-basis: 30%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    color: $text-color;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.menu-btn:hover {
+    border-bottom: 2px solid $white-color;
+    color: $white-color;
+}
+
+.home {
+    background-image: url(../assets/img/hero-bg.jpg);
+    min-height: 91vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.text-home {
+    font-family: "Montserrat", sans-serif;
+    color: $white-color;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.team,
+.about,
+.contact {
+    min-height: 100vh;
+    background-color: $secondary-color;
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    padding: 30px 0px 0px 0px;
+    color: $white-color;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.conteudo>.about {
+    background-color: $primary-color;
+}
+
+.about>h1 {
+    color: $secondary-color;
+}
+
+.section-text {
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.people-team {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    flex: 1 0 auto;
+    flex-wrap: wrap;
+    max-height: auto;
+
+}
+
+.card-people {
+
+    border-radius: 10px;
+    background-color: #cccccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 230px;
+    height: 350px;
+    color: $primary-color;
+}
+
+.image-card {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    height: 40%
+}
+
+.text-card {
+    width: 100%;
+    height: 60%;
+
+}
+
+.text-card>h4 {
+    text-align: center;
+    padding: 5px;
+}
+
+.text-card>h5 {
+    text-align: center;
+}
+
+.about-text {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    flex: 1 0 auto;
+}
+
+.resumo {
+    text-align: justify;
+    padding: 8px;
+    font-size: 15px;
+}
+
+.box-text {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 80%;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.box-text>p {
+    margin: 10px;
+}
+
+
+.image-about {
+    width: 30%;
+    margin: 10px;
+}
+
+.box-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact{
+    align-items: center;
+}
+
+.contact-us {
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 75vh;
+    background-color: $white-color;
+    padding: 20px 15px 20px 15px;
+}
+
+.form-field{
+    height: 6vh;
+    padding-left: 10px;
+    border: 1px solid $primary-color;
+    font-family: "Montserrat", sans-serif;
+}
+
+.form-field::placeholder{
+    font-family: "Montserrat", sans-serif;
+    color: $text-color;
+}
+
+label{
+    color: $primary-color;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+#message{
+    height: 20vh;
+    font-family: "Montserrat", sans-serif;
+}
+
+.submit{
+    margin-top: 20px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit-button{
+    height: 5vh;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid $primary-color;
+    background-color: $primary-color;
+    color: $white-color;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.submit-button:hover{
+    background-color: $white-color;
+    color: $primary-color;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    /*Define que pode quebrar em várias linhas*/
+    flex: 1 0 auto;
+    /*Define o flwx grow, shrink e basis*/
+
+}
+
+.footer {
+    flex-basis: 100%;
+    background-color: $primary-color;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer > h5 {
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    color: $secondary-color;
+}
+
+.social{
+    margin: 10px 0 10px 0;
+    
+}
+
+.social-button{
+    margin-right: 20px;
+    color:$secondary-color;
+}
+
+@media (max-width: 1024px) {
+    .menu-btn{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-btn{
+        font-size: 0.9rem;
+    }
+
+    .menu{
+        flex-basis: 60%;
+    }
+
+    .text-home{
+        font-size: 1.0rem;
+        width: 80%; 
+    }
+
+    .box-text{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 425px) {
+    .menu-btn{
+        font-size: 0.7rem;
+    }
+
+    .home {
+        width: 100%;
+    }
+
+    .about-text{
+        flex-direction: column;
+    }
+  }
+
+  @media (max-width: 375px){
+    .header-content{
+        display: none;
+    }
+
+    .home{
+        min-height: 100vh;
+    }
+  }
+
+  @media(max-width: 320px){
+    .contact-us{
+        height: 65vh;
+        font-size: 12px;
+    }
+
+    .form-field{
+        font-size: 12px;
+    }
+  }
