@@ -194,7 +194,7 @@ body {
 .contact-us {
   margin-top: 20px;
   border-radius: 10px;
-  width: 80%;
+  width: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -305,6 +305,9 @@ label {
   .box-text {
     font-size: 15px;
   }
+  .contact-us {
+    width: 60%;
+  }
 }
 @media (max-width: 425px) {
   .menu-btn {
@@ -316,6 +319,9 @@ label {
   .about-text {
     flex-direction: column;
   }
+  .contact-us {
+    width: 80%;
+  }
 }
 @media (max-width: 375px) {
   .header-content {
@@ -324,11 +330,15 @@ label {
   .home {
     min-height: 100vh;
   }
+  .contact-us {
+    width: 80%;
+  }
 }
 @media (max-width: 320px) {
   .contact-us {
     height: 65vh;
     font-size: 12px;
+    width: 80%;
   }
   .form-field {
     font-size: 12px;
